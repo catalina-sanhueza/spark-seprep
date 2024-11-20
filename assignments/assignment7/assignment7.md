@@ -1,43 +1,38 @@
-# Self-host your LLM
+# Assignment 7 Podman AI Lab
 
+## Run an LLM powered application locally
 
-1. Go to the repository - [https://github.com/redhat-et/whisper-self-hosted-llm](https://github.com/redhat-et/whisper-self-hosted-llm)
-2. Make your fork of the above given repository.
-<img width="1507" alt="Screenshot 2024-04-18 at 2 06 54 PM" src="https://github.com/DS219/spark-seprep/blob/main/assignments/assignment7/whisper.png">
+Follow the directions from the Podman AI Lab documentation to [start a chatbot recipe](https://podman-desktop.io/docs/ai-lab/start-recipe).
+You can choose any recipe from the `Recipe Catalog`. The `Chatbot` and `Summarizer` will use the same model downloaded in class, `instructlab/granite-7b-lab-GGUF`.
+The `Codegen` recipe will by default use a model from HuggingFace that was fine-tuned for code generation. It's recommended to choose one of these 3
+options.
 
-3. Make a clone of your fork on your machine.
+The documentation view of AI Lab is slightly different than the most up-to-date version you all have on your laptops, but you should be able to easily
+deduce how to launch a recipe by finding the `More Details` -> `Start` button.
+
+Chat with your application from your local browser. Take a screenshot of some history of your interaction with the chatbot.
+
+Save your screenshot in a new markdown file, and create a `Pull Request` that adds your file in the `spark-seprep/assignments/assignment7` folder of
+this repository. Along with your markdown file, you'll also need to upload the image it references. Add your image to the `assignment7/images` folder.
+
+In your markdown file, you'll do something like [this example](./sally-omalley.md)
+
 ```
-git clone git@github.com:<add_your_githb_username_here>/whisper-self-hosted-llm.git
+## Sally - Assignement 7
+
+### I ran the Chatbot
+
+Here is my Chatbot Screenshot
+
+![Sally's Screenshot](./images/sally-screenshot.png)
+
+#### What went well
+
+blah blah blah
+
+#### What didn't go well
+
+blah blah blah
 ```
-4. Follow along the intructions in the readme here - [https://github.com/aakankshaduggal/whisper-self-hosted-llm/tree/main/whisper-model-service#readme](https://github.com/aakankshaduggal/whisper-self-hosted-llm/tree/main/whisper-model-service#readme)
-5. The above readme is pretty self-explanatory but if you need a better understanding please consider watching this video [here](https://youtu.be/JD8ZD3pNij0?si=1sHx98h-1_aZPRUi&t=1211)
-  
 
-## Submission
-
-Ensure that you are up to date with the upstream Github repo. Do the following before starting your assignment.
-
-```
-cd <to your DS219 github repo path>
-git checkout main
-git fetch upstream
-git rebase upstream/main
-git checkout -b assignment7 upstream/main
-```
-
-Head to the directory **assignments/assignment7** and create a directory there with your name in the format **FIRST-LAST**.
-The directory should be **assignments/assignment7/[FIRSTNAME-LASTNAME]** so you can add the following here:
- 
-* Add a terminal screenshot of the server hosted on your machine. (Make sure your username is clearly visible on the screenshot for full credit)
-* Add a streamlit UI screenshot with an audio transcription.
-* Add notes and challenges your faced along the way and also add any improvements and suggestions to the process.
-
-Once done, create a PR to submit.
-
-## Demo
-
-In the final lecture on December 4th, you demo this to the class with your own audio and streamlit UI.
-
-##### Note:
-
-You don't have to change any code just run all the steps and execute the code just with your own audio. 
+Be sure to save your markdown file as `YOUR_NAME.md`! 
